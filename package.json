@@ -1,0 +1,15 @@
+{
+  "name": "kcc-test",
+  "version": "1.0.0",
+  "description": "Test Express web server for KeyCrime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "dlentz@us.ibm.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
