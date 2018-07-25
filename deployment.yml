@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: wcra-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: dlentz-key-crime-test
+    spec:
+      containers:
+        - name: dlentz-key-crime-test
+          image: registry.ng.bluemix.net/dlentz-key-crime-test/dlentz-key-crime-test-image:3
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
